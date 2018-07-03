@@ -1,0 +1,10 @@
+La herecnia multiple es derivar una clase unica de varias clases.
+La herencia multiple es util pero puede provocar problemas, como el importante "problema del diamante".Este occure cuando dos clases heredan 
+de la misma clase (como la clase B y C derivan de la clase A), mientras que otra clase (D) deriva B y C. Cuando se crea un objeto D, 
+el sistema lo trata como un tipo de clase base (clase "Ball" o bola y "Sphere" o  esfera, por ejemplo).En el problema del diamante, el sistema 
+no puede determinar de forma decisiva que clase D(¿es tipo A-B-D o tipo A-C-D?) es lo que causa problemas.
+Debido a los problema de herenia multiple, Java no la permite.Pero en realidad las clases derivadas de varias clases base pueden coseguirse de una
+forma segura usando "interfaces".Una interfaz es parecida a una clase, pero no solo define la estructura de la clase, sino tambien su
+codigo real. Una base que implemena una interfaz no "hereda" necesariamente la funcionalidad de la interfaz: solo promete el uso de su 
+estructura. Puesto que una clase que implementa una interfaz no hereda de otra clase(y no es un tipo de la clase base), un programador 
+puede implementar interfaces usando la misma clase. 
